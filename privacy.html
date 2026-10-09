@@ -1,265 +1,45 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Return Guard 隱私權政策</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-        "PingFang TC", "Microsoft JhengHei", sans-serif;
-      line-height: 1.7;
-      max-width: 880px;
-      margin: 0 auto;
-      padding: 40px 20px 64px;
-      color: #1f2937;
-      background: #ffffff;
-    }
-
-    h1, h2 {
-      color: #111827;
-      line-height: 1.35;
-    }
-
-    h1 {
-      margin-bottom: 8px;
-    }
-
-    h2 {
-      margin-top: 32px;
-      margin-bottom: 8px;
-      font-size: 1.25rem;
-    }
-
-    .meta {
-      color: #6b7280;
-      margin-bottom: 32px;
-    }
-
-    .box {
-      background: #f8fafc;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 16px 18px;
-      margin: 20px 0;
-    }
-
-    ul {
-      padding-left: 1.4rem;
-    }
-
-    code {
-      background: #f3f4f6;
-      padding: 2px 5px;
-      border-radius: 5px;
-    }
-
-    a {
-      color: #2563eb;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Return Guard 隱私權政策</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Microsoft JhengHei",sans-serif;max-width:900px;margin:0 auto;padding:40px 20px 72px;color:#1f2937;line-height:1.75;background:#fff}h1,h2{color:#111827;line-height:1.35}h1{margin-bottom:6px}h2{margin-top:30px;font-size:1.25rem}.meta{color:#6b7280;margin-bottom:28px}.box{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:16px 18px;margin:20px 0}ul{padding-left:1.4rem}strong{color:#111827}
+</style>
 </head>
 <body>
-
-  <h1>Return Guard 隱私權政策</h1>
-
-  <div class="meta">
-    最後更新日期：2026 年 9 月 19 日
-  </div>
-
-  <div class="box">
-    Return Guard 是一款協助賣家管理退貨／退款案件的 Chrome 擴充功能。
-    本擴充功能的目的，是在使用者已登入的賣家中心工作階段中，
-    協助檢查案件、辨識聊天狀態、顯示處理結果，
-    並依使用者設定進行自動或手動處理。
-  </div>
-
-  <h2>1. 我們處理哪些資料</h2>
-
-  <p>
-    Return Guard 為了提供功能，可能會在使用者裝置上暫時處理下列資料：
-  </p>
-
-  <ul>
-    <li>退貨／退款案件資訊</li>
-    <li>訂單識別資訊</li>
-    <li>買家識別資訊</li>
-    <li>案件處理狀態</li>
-    <li>是否存在聊天紀錄的狀態資訊</li>
-    <li>目前已登入賣家中心工作階段所需的驗證資訊</li>
-  </ul>
-
-  <p>
-    Return Guard 不以提供本擴充功能以外的目的使用上述資料。
-  </p>
-
-  <h2>2. 登入與驗證資訊</h2>
-
-  <p>
-    Return Guard 可能在目前已登入的賣家中心工作階段中，
-    暫時使用網站本身產生的驗證資訊，例如：
-  </p>
-
-  <ul>
-    <li>Authorization 資訊</li>
-    <li>CSRF Token</li>
-    <li>工作階段識別資訊</li>
-    <li>與賣家中心 API 連線必要的暫時性參數</li>
-  </ul>
-
-  <p>
-    這些資訊僅用於完成使用者要求的賣家中心操作，
-    不會寫入 Return Guard 的長期處理紀錄備份，
-    也不會被用於登入其他服務。
-  </p>
-
-  <h2>3. 聊天資料</h2>
-
-  <p>
-    Return Guard 的用途是判斷買家是否存在聊天紀錄，
-    以決定案件是否需要人工確認。
-  </p>
-
-  <p>
-    擴充功能不以建立聊天資料庫為目的，
-    也不會將聊天內容上傳到 Return Guard 自有伺服器。
-  </p>
-
-  <h2>4. 本機儲存</h2>
-
-  <p>
-    Return Guard 會使用 Chrome 的本機儲存功能保存部分資料，例如：
-  </p>
-
-  <ul>
-    <li>操作模式設定</li>
-    <li>自動排程設定</li>
-    <li>案件處理結果</li>
-    <li>匿名化或雜湊後的案件識別索引</li>
-    <li>處理紀錄備份所需資料</li>
-  </ul>
-
-  <p>
-    這些資料主要保存在使用者自己的瀏覽器環境中。
-  </p>
-
-  <h2>5. 備份與匯入</h2>
-
-  <p>
-    Return Guard 支援使用者手動匯出與匯入處理紀錄，
-    讓使用者在更換電腦後能延續同一商店的案件處理狀態。
-  </p>
-
-  <p>匯出的處理紀錄不包含：</p>
-
-  <ul>
-    <li>Shopee Cookie</li>
-    <li>Authorization 憑證</li>
-    <li>CSRF Token</li>
-    <li>聊天登入 Session</li>
-    <li>帳號密碼</li>
-  </ul>
-
-  <h2>6. 自動排程</h2>
-
-  <p>
-    若使用者主動啟用自動排程，
-    Return Guard 會依使用者設定的時間間隔，
-    在 Chrome 瀏覽器運作期間檢查案件。
-  </p>
-
-  <p>
-    Chrome 瀏覽器關閉期間，
-    Return Guard 不會在背景獨立執行。
-  </p>
-
-  <h2>7. 是否將資料傳送給第三方</h2>
-
-  <p>
-    Return Guard 不會販售使用者資料。
-  </p>
-
-  <p>
-    除了為完成使用者要求而與賣家中心網站本身進行必要通訊外，
-    Return Guard 不會將案件資料、登入資訊或處理紀錄
-    傳送給廣告商、資料仲介商或其他第三方作為商業用途。
-  </p>
-
-  <h2>8. 分析、廣告與追蹤</h2>
-
-  <p>
-    Return Guard 不使用第三方廣告 SDK，
-    不進行跨網站追蹤，
-    也不會基於使用者資料建立廣告或信用評估用途的使用者輪廓。
-  </p>
-
-  <h2>9. 資料用途限制</h2>
-
-  <p>
-    Return Guard 僅會基於其單一用途：
-    「協助賣家管理退貨／退款案件」
-    使用所需資料。
-  </p>
-
-  <p>
-    Return Guard 不會：
-  </p>
-
-  <ul>
-    <li>販售使用者資料</li>
-    <li>將資料用於與退貨／退款案件管理無關的目的</li>
-    <li>使用資料進行信用評等或貸款判斷</li>
-    <li>建立與本擴充功能用途無關的使用者行為資料庫</li>
-  </ul>
-
-  <h2>10. 資料保留</h2>
-
-  <p>
-    處理紀錄會保存在使用者自己的瀏覽器本機，
-    直到使用者清除擴充功能資料、解除安裝擴充功能，
-    或主動清除處理紀錄。
-  </p>
-
-  <p>
-    暫時性的登入與工作階段資訊不會作為長期備份內容保存。
-  </p>
-
-  <h2>11. 使用者控制</h2>
-
-  <p>
-    使用者可以：
-  </p>
-
-  <ul>
-    <li>關閉自動排程</li>
-    <li>切換自動或手動模式</li>
-    <li>清除本機處理紀錄</li>
-    <li>匯出或匯入處理紀錄</li>
-    <li>解除安裝 Return Guard</li>
-  </ul>
-
-  <h2>12. Chrome Web Store Limited Use</h2>
-
-  <p>
-    Return Guard 對從 Chrome 擴充功能取得或處理的使用者資料之使用，
-    將遵守 Chrome Web Store Developer Program Policies，
-    包含 Limited Use 要求。
-  </p>
-
-  <h2>13. 政策更新</h2>
-
-  <p>
-    若 Return Guard 的功能或資料處理方式發生重大變更，
-    本隱私權政策可能會更新。
-    最新版本會公布於本頁面。
-  </p>
-
-  <h2>14. 聯絡方式</h2>
-
-  <p>
-    若你對本隱私權政策或 Return Guard 的資料處理方式有疑問，
-    請透過 Return Guard 的 Chrome Web Store 項目頁面與發布者聯絡。
-  </p>
-
-</body>
-</html>
+<h1>Return Guard 隱私權政策</h1>
+<div class="meta">最後更新日期：2026 年 10 月 9 日</div>
+<div class="box">Return Guard 是協助賣家管理 Shopee 賣家中心退貨／退款案件的 Chrome 擴充功能。Return Guard 並非 Shopee 或 Sea Limited 官方產品，也未獲其背書。</div>
+<h2>1. 擴充功能存取的資料</h2>
+<p>為提供退貨／退款案件檢查與處理功能，Return Guard 可能在使用者已登入的 Shopee 賣家中心工作階段中存取案件與訂單資訊、必要的買家識別資訊、是否存在聊天紀錄的中繼資料，以及完成使用者要求之操作所需的暫時性驗證／工作階段資訊。</p>
+<h2>2. 資料用途</h2>
+<p>上述資料只用於 Return Guard 的單一用途：檢查退貨／退款案件、辨識是否存在既有聊天、維護案件處理狀態，以及在使用者啟用或要求時執行封鎖等相關操作。</p>
+<h2>3. 本機與暫時性儲存</h2>
+<p>設定、自動排程及最小化處理結果會保存在 Chrome 本機儲存空間。訂單快取索引以 SHA-256 衍生值保存。Return Guard 不會刻意將買家姓名、買家 ID、聊天內容、Conversation ID、Cookie、Authorization、CSRF Token 或完整請求網址寫入長期處理紀錄。</p>
+<p>目前瀏覽器工作階段所需的 Shopee request context 可能暫存在 <code>chrome.storage.session</code>，但不會寫入長期備份，並會隨瀏覽器工作階段結束而失效。</p>
+<h2>4. 自動排程</h2>
+<p>只有使用者主動開啟自動排程後，Return Guard 才會依設定的每幾小時或每幾天檢查案件。Chrome 關閉期間不會執行；重新開啟 Chrome 後可恢復原排程，必要時補跑一次錯過的排程。</p>
+<h2>5. 處理紀錄備份</h2>
+<p>使用者可手動匯出與匯入處理紀錄供換機使用。備份不包含 Shopee Cookie、Authorization、CSRF Token、聊天 Session、帳號密碼或其他登入憑證。</p>
+<h2>6. 匿名問題回報</h2>
+<p><strong>匿名問題回報預設關閉。</strong>只有使用者自行開啟「匿名問題回報」後，Return Guard 才會將最小化的技術錯誤統計傳送到 Return Guard 問題回報服務，以協助發現相容性及可靠性問題。</p>
+<p>可能傳送的欄位僅限於：Return Guard 版本、Chrome 主要版本、技術事件類型、正規化錯誤碼、處理階段、HTTP 狀態碼、執行來源／傳輸方式、操作模式、auto-block/dry-run 布林設定，以及已處理／失敗／封鎖／待人工等彙總數量。</p>
+<p><strong>匿名問題回報不包含：</strong></p>
+<ul><li>訂單編號或訂單 ID</li><li>買家 ID 或買家姓名</li><li>商店 ID</li><li>Conversation ID</li><li>聊天或訊息內容</li><li>頁面或 request URL</li><li>Cookie</li><li>Authorization</li><li>CSRF Token</li><li>Shopee Session 值</li><li>帳號密碼</li><li>穩定的 Return Guard 安裝識別碼</li></ul>
+<p>如果問題回報服務暫時無法連線，符合上述限制的匿名技術資料可能暫存在本機佇列，稍後自動重試。關閉匿名問題回報時，待傳佇列會從 Return Guard 本機儲存中移除。</p>
+<h2>7. 問題回報資料如何保存</h2>
+<p>Return Guard 的問題回報後端會將收到的匿名技術事件直接彙整成「每小時統計」，設計上不保存逐一使用者事件歷史，也不將 IP 位址、商店識別、訂單識別、買家識別或穩定安裝識別碼寫入問題回報資料庫。</p>
+<h2>8. 資料分享與販售</h2>
+<p>Return Guard 不販售使用者資料，也不將 Shopee 帳號內容、訂單內容、買家資料、聊天內容或登入憑證提供給廣告商、資料仲介商或其他與功能無關的第三方。</p>
+<p>若使用者開啟匿名問題回報，僅會將第 6 節列出的最小化技術統計傳送至 Return Guard 問題回報服務，用於維護與改善 Return Guard。</p>
+<h2>9. 廣告、信用與其他用途</h2>
+<p>Return Guard 不會將使用者資料用於廣告、信用評等、貸款、與擴充功能單一用途無關的個人輪廓，或轉售用途。</p>
+<h2>10. 使用者控制</h2>
+<ul><li>匿名問題回報可保持關閉，或隨時關閉</li><li>可關閉自動排程</li><li>可清除本機處理紀錄</li><li>可匯出／匯入處理紀錄</li><li>可解除安裝 Return Guard 以移除擴充功能本機資料</li></ul>
+<h2>11. Chrome Web Store Limited Use</h2>
+<p>Return Guard 對使用者資料的使用遵循 Chrome Web Store Developer Program Policies 與 Limited Use 要求，並限制在提供或改善已揭露的單一用途。</p>
+<h2>12. 聯絡方式</h2>
+<p>若對 Return Guard 的隱私權或資料處理方式有疑問，請透過 Return Guard 的 Chrome Web Store 項目頁面聯絡發布者。</p>
+</body></html>
